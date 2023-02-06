@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  <title>LoginPage</title>
+</head>
+<body>
+  
+  <div class="container">
+
+    <h2>Enter login details</h2>
+    <br>
+
+    <div class="field">
+        <label for="password">Username</label>
+        <i class="fa-solid fa-user"></i>
+        <input type="text" placeholder="Username" id="Username">
+    </div>
+      
+      
+    <div class="field">
+      <label for="password">Password</label>
+      <i class="fa-solid fa-lock"></i>
+      <input type="password" placeholder="Password" id="password">
+      <span class="eye" onclick="changeType()">
+        <i class="fa-solid fa-eye" id="eye1"></i>
+        <i class="fa-solid fa-eye-slash" id="eye2"></i>
+      </span>
+    </div>
+
+    <div class="buttons">
+      <div>
+        <input type="checkbox" id="check" class="toggle">
+        <label for="check" class="label">
+          <div class="ball"></div>
+        </label>
+        <p>Stay signed in</p>
+      </div>
+      <button class="btn">Continue</button>
+    </div>
+
+    <a href="#">Reset password</a>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
